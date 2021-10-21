@@ -1,17 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
     <div>
       <header class="site-header">
         <div class="container">
-          <a href="index.html" id="branding">
+          <Link to="/">
             <img src="images/logo.png" alt="" class="logo" />
             <div class="logo-copy">
-              <h1 class="site-title">Company Name</h1>
-              <small class="site-description">Tagline goes here</small>
+              <h1 class="site-title">See Movie</h1>
+              <small class="site-description">Best Site Movie</small>
             </div>
-          </a>
+          </Link>
 
           <div class="main-navigation">
             <button type="button" class="menu-toggle">
@@ -19,7 +20,7 @@ export default function Header() {
             </button>
             <ul class="menu">
               <li class="menu-item current-menu-item">
-                <a href="index.html">Home</a>
+                <Link to="/movie/3">Home</Link>
               </li>
               <li class="menu-item">
                 <a href="about.html">About</a>
@@ -32,6 +33,9 @@ export default function Header() {
               </li>
               <li class="menu-item">
                 <a href="contact.html">Contact</a>
+              </li>
+              <li class="menu-item">
+                <a href="search.html">Search</a>
               </li>
             </ul>
 
