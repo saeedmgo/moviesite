@@ -19,8 +19,9 @@ export default function MoviesSlider({ movies }) {
       }}
     >
       {movies.map((movie) => (
-        <SwiperSlide>
+        <SwiperSlide style={{ paddingBottom: "30px" }}>
           <Card
+            // style={{ paddingBottom: "30px" }}
             hoverable
             cover={
               <img
