@@ -1,3 +1,6 @@
+* {
+  outline: transparent !important;
+}
 article,
 aside,
 details,
@@ -1974,7 +1977,7 @@ ul.arrow li {
 
 .main-navigation {
   float: right;
-  background: white;
+  background: transparent;
   border-radius: 5px;
 }
 .main-navigation .menu-toggle,
@@ -2022,18 +2025,26 @@ ul.arrow li {
   padding: 10px 0;
 }
 .main-navigation .menu-item a {
-  padding: 0 15px;
+  padding: 5px 35px;
   display: inline-block;
-  color: #84878d;
+  color: #ffffff;
   font-size: 14px;
   font-size: 0.9333333333em;
   font-weight: 400;
   line-height: 1;
-  border-right: 1px solid #eeeeef;
+  border-right: 1px solid #eeeeef83;
 }
 .main-navigation .menu-item.current-menu-item,
 .main-navigation .menu-item:hover {
   position: relative;
+}
+.main-navigation .menu-item:hover a {
+  color: rgba(247, 197, 33, 0.945);
+}
+.logo {
+  width: 200px;
+  outline: transparent;
+  border: none;
 }
 .main-navigation .menu-item.current-menu-item:after,
 .main-navigation .menu-item:hover:after {
@@ -2348,4 +2359,7 @@ ul.arrow li {
 }
 .site-footer .colophon {
   padding-top: 30px;
+}
+.ant-progress-circle .ant-progress-text {
+  color: rgb(5 116 112 / 85%) !important;
 }

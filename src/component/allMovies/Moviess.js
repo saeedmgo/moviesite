@@ -2,7 +2,7 @@ import React from "react";
 import useMovieDB from "../../hooks/useMovieDB";
 import MovieItem from "./MovieItem";
 import { Row, Col } from "antd";
-
+import { Link } from "react-router-dom";
 export default function Moviess() {
   const { data, loading } = useMovieDB("movie/top_rated");
   console.log(data);
@@ -11,7 +11,9 @@ export default function Moviess() {
       <Row>
         {data?.results?.map((item) => (
           <Col span={8}>
-            <MovieItem data={item} />
+            <Link to={`/movie/${item.id}`}>
+              <MovieItem data={item} />
+            </Link>
           </Col>
         ))}
       </Row>
